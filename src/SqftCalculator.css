@@ -1,0 +1,156 @@
+.sqft-calculator-container {
+  background-color: var(--dark-surface);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sqft-calculator-container h1 {
+  color: var(--primary);
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-surface-lighter);
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 2px solid var(--secondary);
+}
+
+.input-group label {
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: var(--dark-surface);
+  color: white;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--secondary);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#calculateBtn {
+  background-color: var(--primary);
+  color: #111;
+}
+
+#calculateBtn:hover {
+  background-color: #2196f3;
+}
+
+#clearBtn {
+  background-color: var(--secondary);
+  color: #111;
+}
+
+#clearBtn:hover {
+  background-color: #7e57c2;
+}
+
+.result-section {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: rgba(79, 195, 247, 0.1);
+  border-radius: 6px;
+}
+
+.result-section h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.calculation-steps {
+  margin-bottom: 20px;
+}
+
+.step {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: var(--dark-surface-lighter);
+  border-radius: 4px;
+}
+
+.step h3 {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.formula {
+  background-color: rgba(149, 117, 205, 0.1);
+  padding: 12px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.final-answer {
+  padding: 15px;
+  background-color: rgba(102, 187, 106, 0.1);
+  border-radius: 6px;
+  border-left: 3px solid var(--accent);
+}
+
+.final-answer h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.final-answer p {
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.final-answer strong {
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .button-group button {
+    margin-bottom: 8px;
+  }
+} 

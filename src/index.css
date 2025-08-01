@@ -1,0 +1,21 @@
+:root {
+  --primary: #4fc3f7;
+  --secondary: #9575cd;
+  --accent: #66bb6a;
+  --dark-bg: #1a1a1a;
+  --dark-surface: #212121;
+  --dark-surface-lighter: #2c2c2c;
+  --text: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+} 

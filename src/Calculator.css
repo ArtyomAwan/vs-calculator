@@ -1,0 +1,172 @@
+/* Calculator specific styles */
+.calculator-container {
+  background-color: var(--dark-surface);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--primary);
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 10px;
+  background-color: var(--dark-surface-lighter);
+  border-radius: 4px;
+  border-left: 2px solid var(--secondary);
+  transition: background-color 0.2s;
+}
+
+.service-row:hover {
+  background-color: #333333;
+}
+
+label {
+  flex: 2;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.quantity-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--dark-surface);
+  color: white;
+}
+
+.quantity-input:focus {
+  outline: none;
+  border-color: var(--secondary);
+}
+
+.price-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--accent);
+}
+
+.price-input {
+  width: 70px;
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  text-align: center;
+  color: var(--accent);
+  font-size: 0.9em;
+  background-color: var(--dark-surface);
+}
+
+.price-input:focus {
+  background-color: var(--dark-surface-lighter);
+  border-color: var(--accent);
+  outline: none;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(79, 195, 247, 0.1);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#totalAmount {
+  color: var(--primary);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#calculateBtn {
+  background-color: var(--primary);
+  color: #111;
+}
+
+#calculateBtn:hover {
+  background-color: #2196f3;
+}
+
+#clearBtn {
+  background-color: var(--secondary);
+  color: #111;
+}
+
+#clearBtn:hover {
+  background-color: #7e57c2;
+}
+
+#resetPricesBtn {
+  background-color: var(--accent);
+  color: #111;
+}
+
+#resetPricesBtn:hover {
+  background-color: #4caf50;
+}
+
+/* For React component, ensure inputs have proper appearance */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .service-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label, .quantity-input, .price-container {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .price-container {
+    justify-content: flex-start;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  button {
+    margin-bottom: 8px;
+  }
+} 
